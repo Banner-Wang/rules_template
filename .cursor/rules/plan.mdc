@@ -34,25 +34,40 @@ c. Get required solution conytext from the code files in `src` and other codes a
 a. Think about all possible ways to solve the problem.
 b. Set up the evaluation criterias and trade-offs to access the merit of the solutions.
 c. Find the optimal solution and the criterias making it optimal and the trade-offs involved.
-<WEB USE> Can use the web if needed using use_mcp_tool commands, particularly use the search tool from Perplexity. Example:
+<WEB USE> Can use the web if needed using use_mcp_tool commands, particularly use the search tool from brave-search. Example:
 <use_mcp_tool>
-<server_name>perplexity-mcp</server_name>
-<tool_name>search</tool_name>
+<server_name>brave-search</server_name>
+<tool_name>brave_web_search</tool_name>
 <arguments>
 {
   "param1": "value1",
-  "param2": "value2"
+  "param2": "value2",
+  "param3": "value3"
 }
 </arguments>
 </use_mcp_tool>
 </WEB USE>
 
 <MULTI ATTEMPTS>
+<OPENROUTER USE> If necessary, the command "use_mcp_tool" can be used to employ OpenRouter AI, Example:
+<use_mcp_tool>
+<server_name>openrouterai</server_name>
+<tool_name>chat_completion</tool_name>
+<arguments>
+{
+  "param1": "value1",
+  "param2": "value2",
+  "param3": "value3"
+}
+</arguments>
+</use_mcp_tool>
+</OPENROUTER USE>
 a. Reason out rigorously about the optimality of the solution.
 b. Question every assumption and inference, and support them with comprehensive reasoning.
-c. Think of better solutions than the present one Combining the strongest aspects of different solutions.
-d. Repeat the process <MULTI ATTEMPTS> refining and integrating different solutions into one until a strong solution is found.
-d. Can use <WEB USE> if needed to do research.
+c. The utilization of <OPENROUTER USE> can facilitate the acquisition of code suggestions and inspire novel ideas.
+d. Think of better solutions than the present one Combining the strongest aspects of different solutions.
+e. Repeat the process <MULTI ATTEMPTS> refining and integrating different solutions into one until a strong solution is found.
+f. Can use <WEB USE> if needed to do research.
 </MULTI ATTEMPTS>
 </STEP BY STEP REASONING>
 
