@@ -13,7 +13,7 @@ a. Read the existing documentation in `docs/` : i. `docs/architecture.md`, ii. `
 b. Read the plans and related task planning & context in `tasks/`: i. `tasks/active_context.md`, ii. `tasks/tasks_plan.md`
 c. Get required solution conytext from the code files in `src` and other codes at other places.
 ---
-- Below is the Planning Workflow to follow:
+# Below is the Planning Workflow to follow:
 
 1. UNDERSTAND the REQUIREMENTS:
 <CLARIFICATION>
@@ -83,6 +83,13 @@ f. Can use <WEB USE> if needed to do research.
 </REASONING PRESENTATION>
 - Before implementing, validate the SOLUTION plan produced by <REASONING PRESENTATION>.
 
+---
+# Features of the Plan:
+1. The plan should be:
+a. `extendable`: Further codes can be easily build on the current planning. And extending it in future will be well supported. Anticipate future functionalities and make the plan adaptable to those.
+b. `detailed`: The plan be very detailed, taking care of every aspect that will be affected with it and in every possible ways.
+c. `robust`: Plan for error scenarious and failure cases and have fallbacks for possible failure cases.   
+d. `accurate`: Every aspect should be in sync with each other and individual components should be correct and the interfaces should be correct.   
 ---
 
 After every Plan/Architect task ALWAYS do 2 things:
